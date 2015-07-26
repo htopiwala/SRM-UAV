@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+  <meta charset="utf-8">
+  <!-- Do not delete this tag or World War Z will become a reality :D -->
+  <link rel="shortcut icon" href="images/favicon.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRM-UAV</title>
+
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <!-- Tooltipster CSS File -->
+  <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+  <!-- Tooltipster Theme File -->
+  <link rel="stylesheet" type="text/css" href="css/tooltipster-noir.css" />
+  <!-- Goofle fonts links -->
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+  <!-- If you are using the gem version, you need this only -->
+  <link rel="stylesheet" href="css/app.css">
+  <!-- Font Awesome CSS Files -->
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
+  
+  
+  
+
+  <script src="js/vendor/modernizr.js"></script>
+
+</head>
+<body>
+
+<div class="page-overlay"></div>
+  
+  <header class="logo-navbar" >
+    <div class="fixed">
+      
+        <nav class="top-bar" data-topbar role="navigation"  >
+          <ul class="title-area">
+            <li class="name">
+              <a href="index.html"><img src="images/test3.jpg" style="display: inline-block; margin-top: -9px;  border: 2px solid #fff;"/></a>
+
+            </li>
+
+             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li><a href="#" id="about-tooltip">About</a></li>
+              <li class="active"><a href="team.html">Team</a></li>
+              <li><a href="uav.html" id="uav-tooltip">UAV's</a></li>
+              <li><a href="#" id="gallery-tooltip">Gallery</a></li>
+              <li><a href="research.html" id="research-tooltip">Research</a></li>
+              <li><a href="makeyourown.html">Make Your Own UAV</a></li>
+              <li><a href="joinus.html">Join Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            
+          </section>
+        </nav>
+    </div>
+  </header>
+
+  <style type="text/css">
+    /* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000;
+
+}
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front, .back {
+  width: 260px;
+  height: 260px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  background: #e8e8e8;
+}
+
+  </style>
+
+<section id="team-page">
+  <div class="row" style=" max-width: 80.063rem; padding-left: 100px;">
+    <h1 style="text-align: center;margin-top: 30px; margin-bottom: 40px;">Meet the Team Behind SRM-UAV</h1>
+    <div class="row" style="max-width: 70.063rem; ">
+
+      <div style="padding-left: 150px;">
+      <div style="display: inline-block; margin-right: 15px;  " class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/backdrop-team.png" >
+            <div style="background: #fff;  width: 240px; padding: 5px;position: relative; top: -90px; left: 10px;">
+              <h5 style="text-align: center; font-size: 1rem; font-weight: bold; ">Bharat Mathur</h5>
+              <h6 style="text-align: center;">Team Leader</h6>
+            </div>
+          </div>
+          <div class="back">
+            <div style="margin: 100px auto; width: 150px;">
+              <a href="https://www.facebook.com/bharat.mathur" target="_blank">
+              <span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+               <span class="fa-stack fa-lg" style="display: inline-block;" id="bharat-phone">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-phone fa-stack-1x fa-inverse" ></i>
+              </span>
+
+              <a href="mailto:bharat.mathur@hotmail.com?subject=Feedback/Query" target="_blank"><span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div style="display: inline-block; margin-right: 15px;  " class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/backdrop-team.png" >
+            <div style="background: #fff;  width: 240px; padding: 5px;position: relative; top: -90px; left: 10px;">
+              <h5 style="text-align: center; font-size: 1rem; font-weight: bold; ">Shreyas Vasudevan</h5>
+              <h6 style="text-align: center;">Asst. Team Leader</h6>
+            </div>
+          </div>
+          <div class="back">
+            <div style="margin: 100px auto; width: 150px;">
+
+              <a href="https://www.facebook.com/shreyas.vasudevan" target="_blank">
+              <span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+               <span class="fa-stack fa-lg" style="display: inline-block;" id="shreyas-phone">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-phone fa-stack-1x fa-inverse" ></i>
+              </span>
+
+              <a href="mailto:shreyasvasudevan94@gmail.com?subject=Feedback/Query" target="_blank"><span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div style="display: inline-block; margin-right: 15px;  " class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/backdrop-team.png" >
+            <div style="background: #fff;  width: 240px; padding: 5px;position: relative; top: -90px; left: 10px;">
+              <h5 style="text-align: center; font-size: 1rem; font-weight: bold; ">Abhishek Mohanty</h5>
+              <h6 style="text-align: center;">Asst. Team Leader</h6>
+            </div>
+          </div>
+          <div class="back">
+            <div style="margin: 100px auto; width: 150px;">
+
+              <a href="https://www.facebook.com/abhishek.mohanty.142" target="_blank">
+              <span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+               <span class="fa-stack fa-lg" style="display: inline-block;" id="gaurang-phone">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-phone fa-stack-1x fa-inverse" ></i>
+              </span>
+
+              <a href="mailto:srmuav@gmail.com?subject=Feedback/Query" target="_blank"><span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+      <hr>
+
+
+      <div style="padding-left: 300px;">
+
+       <div style="display: inline-block; margin-right: 15px; margin-bottom: 40px; " class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/backdrop-team.png" >
+            <div style="background: #fff;  width: 240px; padding: 5px;position: relative; top: -90px; left: 10px;">
+              <h5 style="text-align: center; font-size: 1rem; font-weight: bold; ">Arnab Halder</h5>
+              <h6 style="text-align: center;">Power Systems Engineer</h6>
+            </div>
+          </div>
+          <div class="back">
+            <div style="margin: 100px auto; width: 100px;">
+
+              <a href="https://www.facebook.com/arnab.halder.583" target="_blank">
+              <span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+              <a href="mailto:srmuav@gmail.com?subject=Feedback/Query" target="_blank"><span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+       <div style="display: inline-block; margin-right: 15px; margin-bottom: 40px; " class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/backdrop-team.png" >
+            <div style="background: #fff;  width: 240px; padding: 5px;position: relative; top: -90px; left: 10px;">
+              <h5 style="text-align: center; font-size: 1rem; font-weight: bold; ">Deeptaman Das</h5>
+              <h6 style="text-align: center;">Embedded Systems Engineer</h6>
+            </div>
+          </div>
+          <div class="back">
+            <div style="margin: 100px auto; width: 100px;">
+
+              <a href="https://www.facebook.com/deeptaman.das" target="_blank">
+              <span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+              <a href="mailto:srmuav@gmail.com?subject=Feedback/Query" target="_blank"><span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div style="display: inline-block; margin-right: 15px;  margin-bottom: 40px;" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/backdrop-team.png" >
+            <div style="background: #fff;  width: 240px; padding: 5px;position: relative; top: -90px; left: 10px;">
+              <h5 style="text-align: center; font-size: 1rem; font-weight: bold; ">Nitin Babu</h5>
+              <h6 style="text-align: center;">Design Engineer</h6>
+            </div>
+          </div>
+          <div class="back">
+            <div style="margin: 100px auto; width: 100px;">
+
+              <a href="https://www.facebook.com/nitin.babu.52" target="_blank">
+              <span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+              <a href="mailto:srmuav@gmail.com?subject=Feedback/Query" target="_blank"><span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div style="display: inline-block; margin-right: 15px;  margin-bottom: 40px;" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/backdrop-team.png" >
+            <div style="background: #fff;  width: 240px; padding: 5px;position: relative; top: -90px; left: 10px;">
+              <h5 style="text-align: center; font-size: 1rem; font-weight: bold; ">Nipun Bhatnagar</h5>
+              <h6 style="text-align: center;">Fabrication Engineer</h6>
+            </div>
+          </div>
+          <div class="back">
+            <div style="margin: 100px auto; width: 100px;">
+
+              <a href="https://www.facebook.com/nipun.bhatnagar.56" target="_blank">
+              <span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+              <a href="mailto:srmuav@gmail.com?subject=Feedback/Query" target="_blank"><span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div style="display: inline-block; margin-right: 15px;  margin-bottom: 40px;" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/backdrop-team.png" >
+            <div style="background: #fff;  width: 240px; padding: 5px;position: relative; top: -90px; left: 10px;">
+              <h5 style="text-align: center; font-size: 1rem; font-weight: bold; ">Syed Muslim Hyder Abedi</h5>
+              <h6 style="text-align: center;">Design Intern</h6>
+            </div>
+          </div>
+          <div class="back">
+            <div style="margin: 100px auto; width: 100px;">
+
+              <a href="#" target="_blank">
+              <span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+              <a href="mailto:srmuav@gmail.com?subject=Feedback/Query" target="_blank"><span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div style="display: inline-block; margin-right: 15px;  margin-bottom: 40px;" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/backdrop-team.png" >
+            <div style="background: #fff;  width: 240px; padding: 5px;position: relative; top: -90px; left: 10px;">
+              <h5 style="text-align: center; font-size: 1rem; font-weight: bold; ">Umeaka Emmanuel</h5>
+              <h6 style="text-align: center;">Design Intern</h6>
+            </div>
+          </div>
+          <div class="back">
+            <div style="margin: 100px auto; width: 100px;">
+
+              <a href="https://www.facebook.com/umeaka.chiemezuoemmanuel" target="_blank">
+              <span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+              <a href="mailto:srmuav@gmail.com?subject=Feedback/Query" target="_blank"><span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div style="display: inline-block; margin-right: 15px;  margin-bottom: 40px;" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/backdrop-team.png" >
+            <div style="background: #fff;  width: 240px; padding: 5px;position: relative; top: -90px; left: 10px;">
+              <h5 style="text-align: center; font-size: 1rem; font-weight: bold; ">Ramasubramanian Raghavan</h5>
+              <h6 style="text-align: center;">Corporate Intern</h6>
+            </div>
+          </div>
+          <div class="back">
+            <div style="margin: 100px auto; width: 100px;">
+
+              <a href="https://www.facebook.com/r.ramasubramanian" target="_blank">
+              <span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+              <a href="mailto:srmuav@gmail.com?subject=Feedback/Query" target="_blank"><span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div style="display: inline-block; margin-right: 15px;  margin-bottom: 40px;" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/backdrop-team.png" >
+            <div style="background: #fff;  width: 240px; padding: 5px;position: relative; top: -90px; left: 10px;">
+              <h5 style="text-align: center; font-size: 1rem; font-weight: bold; ">Atri Mukherji</h5>
+              <h6 style="text-align: center;">Corporate Intern</h6>
+            </div>
+          </div>
+          <div class="back">
+            <div style="margin: 100px auto; width: 100px;">
+
+              <a href="https://www.facebook.com/atrimukherji" target="_blank">
+              <span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+              <a href="mailto:srmuav@gmail.com?subject=Feedback/Query" target="_blank"><span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div style="display: inline-block; margin-right: 15px;  margin-bottom: 40px;" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/backdrop-team.png" >
+            <div style="background: #fff;  width: 240px; padding: 5px;position: relative; top: -90px; left: 10px;">
+              <h5 style="text-align: center; font-size: 1rem; font-weight: bold; ">Gourav Beura</h5>
+              <h6 style="text-align: center;">Corporate Intern</h6>
+            </div>
+          </div>
+          <div class="back">
+            <div style="margin: 100px auto; width: 100px;">
+
+              <a href="https://www.facebook.com/gourav.beura.9" target="_blank">
+              <span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+              <a href="mailto:srmuav@gmail.com?subject=Feedback/Query" target="_blank"><span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div style="display: inline-block; margin-right: 15px;  margin-bottom: 40px;" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/backdrop-team.png" >
+            <div style="background: #fff;  width: 240px; padding: 5px;position: relative; top: -90px; left: 10px;">
+              <h5 style="text-align: center; font-size: 1rem; font-weight: bold; ">Husain Topiwala</h5>
+              <h6 style="text-align: center;">Web Developer</h6>
+            </div>
+          </div>
+          <div class="back">
+            <div style="margin: 100px auto; width: 100px;">
+
+              <a href="https://www.facebook.com/RockStar.HuSain" target="_blank">
+              <span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+              <a href="mailto:husaint21@gmail.com?subject=Feedback/Query" target="_blank"><span class="fa-stack fa-lg" style="display: inline-block;">
+              <i class="fa fa-circle fa-stack-2x" style="color: steelblue;"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse" ></i>
+              </span></a>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</section>
+
+
+<section id="footer">
+  <div class="row">
+    <div class="columns large-9">
+      <p >Copyright &copy; Team SRM-UAV. All Rights Reserved | Designed By : <a href="https://www.facebook.com/RockStar.HuSain">HT Developers</a></p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- body content here -->
+
+  <!-- Social Buttons -->
+  <div class="social-buttons-fixed">
+    <ul>
+            <li class="facebook"><a href="https://www.facebook.com/SrmUav" target="_blank" title="Like us on Facebook"><i class="fa fa-facebook"></i></a></li>
+                  <li class="twitter"><a href="#" target="_blank" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                  <li class="gplus"><a href="#" target="_blank" title="Follow us on Google+"><i class="fa fa-google-plus"></i></a></li>
+                  <li class="linkedin"><a href="#" target="_blank" title="Follow us on LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+  </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script type="text/javascript" src="js/jquery.tooltipster.js"></script>
+        
+  <script>
+    $(document).foundation();
+  </script>
+  
+  <script>
+        $(document).ready(function() {
+            $('#uav-tooltip').tooltipster({
+                content: $('<ul class="nav-growpop"><li><a class="prev" href="uav.html#aeolus"><div><h3>AEOLUS is a windmill inspection UAV. It is equipped with a DSLR camera mounted on an image stabilization system.</h3><img src="images/aeolus.jpg" alt="Previous thumb"/></div>AEOLUS</a></li><li><a class="prev" href="uav.html#x2"><div><h3>X-2 is a hybrid UAV which combines the advantages of a multi-rotor and a fixed wing aircraft.</h3><img src="images/x-2.jpg" alt="Previous thumb"/></div>X-2</a></li><li><a class="prev" href="uav.html#micro"><div><h3>SRM-UAV Micro-Copter is a palm sized UAV for indoor surveillance. It is specifically designed for reconnaissance operations.</h3><img src="images/micro-quadcopter.jpg" alt="Previous thumb"/></div>Micro Quad Copter</a></li><li><a class="prev" href="uav.html#salus"><div><h3>SALUS is a Face Recognition UAV. It is a Quadcopter equipped with a digital camera for face recognition capability.</h3><img src="images/salus-2.jpg" alt="Previous thumb"/></div>SALUS</a></li><li><a class="prev" href="#"><div><h3>ACE is a fixed wing UAV capable of carrying small payload (like camera) and gives a high endurance</h3><img src="images/bg.png" alt="Previous thumb"/></div>ACE</a></li><li><a class="prev" href="#"><div><h3>VR is an IC Engine Fixed Wing UAV. It gives better thrust and carries better payloads</h3><img src="images/bg.png" alt="Previous thumb"/></div>VR</a></li></ul>'),
+                theme: 'tooltipster-noir',
+                animation: 'grow',
+                interactive : true,
+                offsetY : 10,
+                minWidth: 500
+            });
+  
+           $('#about-tooltip').tooltipster({
+                content: $('<ul class="nav-growpop"><li><a class="prev" href="http://www.srmuniv.ac.in/index.html" target="_blank"><div><h3>The SRM University, is a co-educational private university in the state of Tamil Nadu, India.</h3><img src="images/Srmseal.png" alt="Previous thumb"/></div>SRM University</a></li><li style="margin-bottom: 100px;"><a class="prev" href="about.html"><div><h3>SRM UAV is a research team of SRM University with its primary focus on Unmanned Aerial Vehicles.</h3><img src="images/srmuav-logo.png" alt="Previous thumb" style="height: 70px"/></div>SRM-UAV</a></li></ul>'),
+                theme: 'tooltipster-noir',
+                animation: 'grow',
+                interactive : true,
+                offsetY : 10,
+                minHeight: 400,
+                minWidth: 500
+            });
+
+            $('#gallery-tooltip').tooltipster({
+                content: $('<div class="row"><h3>Launching Soon!</h3><h5 ><em>We\'re not quite there yet - but we\'re getting there!</em></h5></div>'),
+                theme: 'tooltipster-noir',
+                animation: 'grow',
+                interactive : true,
+                offsetY : 10,
+                minWidth: 500
+            });
+
+            $('#research-tooltip').tooltipster({
+                content: $('<ul class="nav-growpop" id="research-tool"><li><a class="prev" href="research.html#obstacle"><div><h3>Any obstacle in the path of the UAV will be sensed, detected and avoided autonomously.</h3><img src="images/bg.png" alt="Previous thumb"/></div>Obstacle avoidance</a></li><li><a class="prev" href="research.html#dynamicobject"><div><h3>This technology makes use of a thermal or electro-optical camera which enables the UAV to view and follow moving objects on the ground.</h3><img src="images/bg.png" alt="Previous thumb"/></div>Dynamic Object Tracking</a></li><li><a class="prev" href="research.html#autopilot"><div><h3>We are developing our very own autopilot system from scratch on Arduino platform.</h3><img src="images/bg.png" alt="Previous thumb"/></div>Indigenous Autopilot System</a></li><li><a class="prev" href="research.html#foldingwing"><div><h3>Folding wings in a UAV can reduce the volume occupied by it when it is on ground.</h3><img src="images/bg.png" alt="Previous thumb"/></div>Folding Wing UAV</a></li><li><a class="prev" href="research.html#selfhealing"><div><h3>Composites are casted with a special type of resin, which covers up cracks that are developed on the surface of the material.</h3><img src="images/bg.png" alt="Previous thumb"/></div>Self-Healing Composites</a></li><li><a class="prev" href="research.html#midairrestart"><div><h3>We are currently working on a mid-air engine restart using a clutch mechanism.</h3><img src="images/bg.png" alt="Previous thumb"/></div>Mid Air Engine Restart</a></li></ul>'),
+                theme: 'tooltipster-noir',
+                animation: 'grow',
+                interactive : true,
+                offsetY : 10,
+                minWidth: 500
+            });
+
+            $('#bharat-phone').tooltipster({
+                content: $('<h6>(+91) 9871-060-165</h6>'),
+                theme: 'tooltipster-noir',
+                animation: 'swing',
+                interactive : true,
+                offsetY : 5,
+                minWidth: 170
+            });
+
+            $('#shreyas-phone').tooltipster({
+                content: $('<h6>(+91) 7200-024-694</h6>'),
+                theme: 'tooltipster-noir',
+                animation: 'swing',
+                interactive : true,
+                offsetY : 5,
+                minWidth: 170
+            });
+
+            $('#gaurang-phone').tooltipster({
+                content: $('<h6>(+91) 9940-136-860</h6>'),
+                theme: 'tooltipster-noir',
+                animation: 'swing',
+                interactive : true,
+                offsetY : 5,
+                minWidth: 170
+            });
+           
+        });
+    </script>
+
+   
+    
+  
+</body>
+</html>
